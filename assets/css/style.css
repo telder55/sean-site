@@ -35,7 +35,7 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: url('nurse_practitioner_background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/nurse_practitioner_background.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -75,3 +75,33 @@ footer {
     padding: 1rem;
     text-align: center;
 }
+
+/* ... (existing styles) ... */
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.sean-portrait {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+    }
+
+    .sean-portrait {
+        margin-right: 2rem;
+        margin-bottom: 0;
+    }
+}
+
+/* ... (remaining styles) ... */
